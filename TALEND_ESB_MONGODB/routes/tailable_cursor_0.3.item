@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_c_f4wEecEeaW7KxDKhFZQA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_c_f4wUecEeaW7KxDKhFZQA" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_c_f4wkecEeaW7KxDKhFZQA">
+    <elementParameter xmi:id="_c_f4w0ecEeaW7KxDKhFZQA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_c_f4xEecEeaW7KxDKhFZQA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_c_f4xUecEeaW7KxDKhFZQA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4xkecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4x0ecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4yEecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4yUecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4ykecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4y0ecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4zEecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4zUecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4zkecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_c_f4z0ecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_c_f40EecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_c_f40UecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_c_f40kecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_c_f400ecEeaW7KxDKhFZQA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_zLhp4iXNEea16bMsiLlpDA" id="_ow5lcCXKEea16bMsiLlpDA" name="DataOperation"/>
+    <routinesParameter xmi:id="_zLhp4yXNEea16bMsiLlpDA" id="_oxgCYCXKEea16bMsiLlpDA" name="Mathematical"/>
+    <routinesParameter xmi:id="_zLhp5CXNEea16bMsiLlpDA" id="_oxkT0CXKEea16bMsiLlpDA" name="Numeric"/>
+    <routinesParameter xmi:id="_zLhp5SXNEea16bMsiLlpDA" id="_oxnXICXKEea16bMsiLlpDA" name="Relational"/>
+    <routinesParameter xmi:id="_zLhp5iXNEea16bMsiLlpDA" id="_oxqacCXKEea16bMsiLlpDA" name="StringHandling"/>
+    <routinesParameter xmi:id="_zLhp5yXNEea16bMsiLlpDA" id="_oxur4CXKEea16bMsiLlpDA" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_zLhp6CXNEea16bMsiLlpDA" id="_oxyWQCXKEea16bMsiLlpDA" name="TalendDate"/>
+    <routinesParameter xmi:id="_zLhp6SXNEea16bMsiLlpDA" id="_ox2AoCXKEea16bMsiLlpDA" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_c_f41EecEeaW7KxDKhFZQA" componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter xmi:id="_c_f41UecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_3" show="false"/>
+    <elementParameter xmi:id="_c_f41kecEeaW7KxDKhFZQA" field="TEXT" name="URI" value="&quot;mongodb:myDb?database=testDB&amp;collection=camelTestCapped&amp;tailTrackIncreasingField=increasing&amp;persistentTailTracking=true&amp;persistentId=persistId&amp;tailTrackDb=trackdb&amp;tailTrackCollection=trackcollection&amp;tailTrackField=trackfield&quot;"/>
+    <elementParameter xmi:id="_c_f410ecEeaW7KxDKhFZQA" field="TABLE" name="HOTLIBS">
+      <elementValue xmi:id="_c_f42EecEeaW7KxDKhFZQA" elementRef="LIBPATH" value="MONGODB"/>
+    </elementParameter>
+    <elementParameter xmi:id="_c_f42UecEeaW7KxDKhFZQA" field="CHECK" name="USE_CUSTOM_COMPONENT" value="false"/>
+    <elementParameter xmi:id="_c_f42kecEeaW7KxDKhFZQA" field="MODULE_LIST" name="LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_c_f420ecEeaW7KxDKhFZQA" field="TEXT" name="LABEL" value="tail tracking"/>
+    <elementParameter xmi:id="_c_f43EecEeaW7KxDKhFZQA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_c_f43UecEeaW7KxDKhFZQA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+    <elementParameter xmi:id="_c_f43kecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_c_f430ecEeaW7KxDKhFZQA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;tailable_cursor.cLog_1&quot;"/>
+    <elementParameter xmi:id="_c_f44EecEeaW7KxDKhFZQA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_c_f44UecEeaW7KxDKhFZQA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_c_f44kecEeaW7KxDKhFZQA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_c_f440ecEeaW7KxDKhFZQA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_c_f45EecEeaW7KxDKhFZQA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_c_f45UecEeaW7KxDKhFZQA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_c_f45kecEeaW7KxDKhFZQA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_c_f450ecEeaW7KxDKhFZQA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_c_f46EecEeaW7KxDKhFZQA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_c_f46UecEeaW7KxDKhFZQA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_c_f46kecEeaW7KxDKhFZQA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_c_f460ecEeaW7KxDKhFZQA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_c_f47EecEeaW7KxDKhFZQA" field="TEXT" name="LABEL" value="send to console"/>
+    <elementParameter xmi:id="_c_f47UecEeaW7KxDKhFZQA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_c_f47kecEeaW7KxDKhFZQA" componentName="cBeanRegister" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
+    <elementParameter xmi:id="_c_f470ecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_2" show="false"/>
+    <elementParameter xmi:id="_c_f48EecEeaW7KxDKhFZQA" field="TEXT" name="ID" value="&quot;myDb&quot;"/>
+    <elementParameter xmi:id="_c_f48UecEeaW7KxDKhFZQA" field="RADIO" name="SIMPLE_CONFIG" value="false"/>
+    <elementParameter xmi:id="_c_f48kecEeaW7KxDKhFZQA" field="RADIO" name="CONFIG_BY_CODE" value="true"/>
+    <elementParameter xmi:id="_c_f480ecEeaW7KxDKhFZQA" field="TEXT" name="CLASS_QUALIFIED_NAME" value="java.lang.Object" show="false"/>
+    <elementParameter xmi:id="_c_f49EecEeaW7KxDKhFZQA" field="CHECK" name="SPECIFY_ARGUMENTS" value="false" show="false"/>
+    <elementParameter xmi:id="_c_f49UecEeaW7KxDKhFZQA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_c_f49kecEeaW7KxDKhFZQA" field="MEMO_IMPORT" name="IMPORT" value="import com.mongodb.MongoClient;"/>
+    <elementParameter xmi:id="_c_f490ecEeaW7KxDKhFZQA" field="LABEL" name="NOTE" value="Note: Provide own codes to specify *beanInstance* variable"/>
+    <elementParameter xmi:id="_c_f4-EecEeaW7KxDKhFZQA" field="MEMO_JAVA" name="CODE" value="beanInstance = new MongoClient(&quot;192.168.99.100&quot;, 27017);"/>
+    <elementParameter xmi:id="_c_f4-UecEeaW7KxDKhFZQA" field="TEXT" name="LABEL" value="mongo ds"/>
+    <elementParameter xmi:id="_c_f4-kecEeaW7KxDKhFZQA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_c_f4-0ecEeaW7KxDKhFZQA" componentName="cJavaDSLProcessor" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
+    <elementParameter xmi:id="_c_f4_EecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_2" show="false"/>
+    <elementParameter xmi:id="_c_f4_UecEeaW7KxDKhFZQA" field="MEMO_JAVA" name="CODE" value=".noAutoStartup()"/>
+    <elementParameter xmi:id="_c_f4_kecEeaW7KxDKhFZQA" field="TEXT" name="LABEL" value="no autostartup"/>
+    <elementParameter xmi:id="_c_f4_0ecEeaW7KxDKhFZQA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_c_f5AEecEeaW7KxDKhFZQA" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cMessagingEndpoint_3" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_3" target="cJavaDSLProcessor_2">
+    <elementParameter xmi:id="_c_f5AUecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_c_f5AkecEeaW7KxDKhFZQA" connectorName="ROUTE" label="row1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cJavaDSLProcessor_2" target="cLog_2">
+    <elementParameter xmi:id="_c_f5A0ecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob xmi:id="_c_f5BEecEeaW7KxDKhFZQA">
+    <elementParameter xmi:id="_c_f5BUecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_3" show="false"/>
+    <elementParameter xmi:id="_c_f5BkecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_c_f5B0ecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_c_f5CEecEeaW7KxDKhFZQA">
+    <elementParameter xmi:id="_c_f5CUecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_c_f5CkecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_c_f5C0ecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_c_f5DEecEeaW7KxDKhFZQA">
+    <elementParameter xmi:id="_c_f5DUecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cBeanRegister_2" show="false"/>
+    <elementParameter xmi:id="_c_f5DkecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_c_f5D0ecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_c_f5EEecEeaW7KxDKhFZQA">
+    <elementParameter xmi:id="_c_f5EUecEeaW7KxDKhFZQA" field="TEXT" name="UNIQUE_NAME" value="cJavaDSLProcessor_2" show="false"/>
+    <elementParameter xmi:id="_c_f5EkecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_c_f5E0ecEeaW7KxDKhFZQA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,20 @@
+package beans;
+
+import org.apache.camel.dataformat.bindy.annotation.CsvRecord;
+import org.apache.camel.dataformat.bindy.annotation.DataField;
+
+@CsvRecord(separator = ";", skipFirstLine = true)
+public class Listing {
+	
+	@DataField(pos = 1)
+	private Integer increasing;
+	
+	@DataField(pos = 2)
+    private String value;
+    
+	public Integer getIncreasing() { return increasing; }
+	public void setIncreasing(Integer increasing) {	this.increasing = increasing; }
+	
+	public String getValue() { return value; }
+	public void setValue(String value) { this.value = value; }
+}
